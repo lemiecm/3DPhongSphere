@@ -1,6 +1,6 @@
 # 3DPhongSphere
 Create 3D sphere with applied Phong Shading.<br />
-<img src="https://github.com/lemiecm/3DPhongSphere/blob/master/image.png?raw=true" width="100" height="100"/>
+<img src="https://github.com/lemiecm/3DPhongSphere/blob/master/image.png?raw=true" width="500" height="500"/>
 
 ## Description
 • in the center of the scene there is displayed a sphere <br />
