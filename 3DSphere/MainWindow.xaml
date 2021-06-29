@@ -1,0 +1,84 @@
+﻿<Window x:Class="_3DSphere.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3DSphere"
+        mc:Ignorable="d"
+        Title="PhongSphere" Height="550" Width="660" KeyDown="MyImage_KeyDown" MinHeight="550" MinWidth="660">
+    <Grid x:Name="imageGrid" Visibility="Visible" Focusable="True"  KeyDown="MyImage_KeyDown" >
+        <StackPanel>
+            <Separator/>
+            <StackPanel Orientation="Horizontal">
+
+                <Image Name="MyImage"  Width="400" Height="400"  Stretch="None" 
+               >
+
+                </Image>
+                <StackPanel Orientation="Horizontal">
+                    <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+                </StackPanel>
+                <StackPanel Margin="10">
+                    <Label HorizontalContentAlignment="Center" FontSize="14">
+                        <Bold>Materials:</Bold>
+                    </Label>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label>
+                            <Bold>Matt</Bold>
+                        </Label>
+                        <RadioButton Name="mattButton" Margin="7" Checked="mattButton_Checked"></RadioButton>
+                        <Label>
+                            <Bold>Metallic</Bold>
+                        </Label>
+                        <RadioButton Name="metalicButton"  Margin="7" Checked="metalicButton_Checked"></RadioButton>
+
+
+                    </StackPanel>
+                    <Separator/>
+                    <Label  HorizontalAlignment="Center" FontSize="14">
+                        <Bold>Press or Click</Bold></Label>
+                    <TextBlock Margin="10,0,10,0" TextAlignment="Left">
+                                                <Bold>X</Bold> - to rotate around x-axis <LineBreak/> 
+                                                <Bold>Y</Bold> - to rotate around y-axis <LineBreak/> 
+                                                <Bold>R</Bold> - to start/end rotating animation <LineBreak/> 
+       
+                    </TextBlock>
+                    <Label  HorizontalAlignment="Center">
+                        <Bold>Camera</Bold>
+                    </Label>
+                    <TextBlock>
+                         <Bold>ArrowUp</Bold> - to move camera up <LineBreak/> 
+                         <Bold>ArrowDown</Bold> - to move camera down <LineBreak/> 
+                         <Bold>ArrowLeft</Bold> - to move camera left <LineBreak/> 
+                         <Bold>ArrowRight</Bold> - to move camera right<LineBreak/>
+                    </TextBlock>
+                    <Label  HorizontalAlignment="Center">
+                        <Bold>Sphere</Bold>
+                    </Label>
+                    <TextBlock>
+                         <Bold>W</Bold> - to move sphere up <LineBreak/> 
+                         <Bold>S</Bold> - to move sphere down<LineBreak/>
+                         <Bold>A</Bold> - to move sphere left <LineBreak/> 
+                         <Bold>D</Bold> - to move sphere right<LineBreak/>
+                    </TextBlock>
+                    <Label  HorizontalAlignment="Center">
+                        <Bold>Light Source</Bold>
+                    </Label>
+                    <TextBlock>
+                         <Bold>I</Bold> - to move light source up <LineBreak/> 
+                         <Bold>K</Bold> - to move light source down<LineBreak/>
+                         <Bold>J</Bold> - to move light source left <LineBreak/> 
+                         <Bold>L</Bold> - to move light source right<LineBreak/>
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+                </StackPanel>
+
+            </StackPanel>
+            <Separator/>
+        </StackPanel>
+        
+        
+    </Grid>
+</Window>
